@@ -11,6 +11,7 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.5.13",
     "@tinymce/tinymce-react": "^4.3.2",
+    "aos": "^2.3.4",
     "axios": "^1.7.2",
     "cookies-next": "^4.1.0",
     "dayjs": "^1.11.11",
@@ -26,6 +27,7 @@
     "swiper": "^11.0.5"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/nodemailer": "^6.4.14",
     "@types/react": "^18",
