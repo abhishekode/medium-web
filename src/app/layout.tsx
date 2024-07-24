@@ -4,16 +4,10 @@ import "./globals.css";
 import 'swiper/css';
 
 // Import Layout Component
+import Providers from "./providers";
 import Header from '@/components/Layout/header'
 import Footer from '@/components/Layout/footer'
-
-// Import theme provider
-import Providers from "./providers";
-
-// Import Contexts
-import { UserContextProvider } from "@/context/UserContext";
-import { BasicInfoProvider } from "@/context/basicInfoContext";
-import { CategoryProvider } from "@/context/categoryContext";
+import AOSProvider from "@/components/Common/AOSInit";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,18 +18,15 @@ interface AdminLayoutProps {
 const RootLayout: React.FC<AdminLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
+
       <body className={inter.className}>
-        <Providers>
-          <UserContextProvider>
-            <BasicInfoProvider>
-              <CategoryProvider>
-                <Header />
-                <div className="min-h-screen">{children}</div>
-                <Footer />
-              </CategoryProvider>
-            </BasicInfoProvider>
-          </UserContextProvider>
-        </Providers>
+        <AOSProvider>
+          <Providers>
+            <Header />
+            <div className="min-h-screen">{children}</div>
+            {/* <Footer /> */}
+          </Providers>
+        </AOSProvider>
       </body>
     </html>
   );
