@@ -65,9 +65,8 @@ const StickyNav = () => {
         <div className="py-5 px-2 flex justify-between items-center w-full rounded-md">
           <div className="cursor-pointer">
             <Link href="/" className="md:text-3xl text-xl font-extrabold uppercase">
-              Crystal Pathshala
+              iAbhishek
             </Link>
-            <p className="uppercase md:text-xs text-[10px]  font-semibold">school of language</p>
           </div>
 
           <div className="lg:hidden">
