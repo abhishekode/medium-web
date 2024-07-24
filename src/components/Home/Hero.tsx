@@ -2,41 +2,27 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen">
-      <div className="absolute inset-0 overflow-hidden">
-        <video
-          autoPlay
-          muted
-          loop
-          className="w-full h-full object-cover object-center"
-        >
-          <source src="/assets/crystal.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div className="absolute inset-0 bg-[rgba(0,0,0,0.1)] opacity-60"></div>
-      </div>
-      <div className=" max-w-5xl mx-auto absolute inset-0 flex items-center justify-center z-10">
-        <div className="text-center text-white">
-          <h1 className="title-font sm:text-7xl text-4xl mb-4 font-bold">
-          English Courses & Personality Development.
-          </h1>
-          <p className="mb-8 leading-relaxed text-white">
-          At Crystal Pathshala, we take pride in being an exceptional English Language School and the Best Institute for Spoken English Course & Personality Development. Join us on a journey towards fluent English and holistic personality enhancement.
-          </p>
-          {/* <p className="text-sm mt-2 text-gray-500 mb-8 w-full">
-            Neutra shabby chic ramps, viral fixie.
-          </p> */}
-          <div className="flex justify-center items-center">
-            <button className="bg-blue-600 inline-flex py-3 px-8 rounded-lg items-center hover:bg-blue-500 text-gray-100 focus:outline-none">
-              Contact us
-            </button>
-            <button className="border inline-flex py-3 px-8 rounded-lg items-center ml-4 hover:bg-gray-200 focus:outline-none">
-              Courses
-            </button>
-          </div>
+    <section className="relative py-12 sm:py-16 lg:pt-20 xl:pb-0">
+    <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div className="max-w-3xl mx-auto text-center">
+            <p className="inline-flex px-4 py-2 text-base text-gray-900 border border-gray-200 rounded-full font-pj">Made by Developers, for Developers</p>
+            <h1 className="mt-5 text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">Quality resources shared by the community</h1>
+            <p className="max-w-md mx-auto mt-6 text-base leading-7 text-gray-600 font-inter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.</p>
+
+            <div className="relative inline-flex mt-10 group" data-aos="zoom-in-left">
+                <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+
+                <a href="#" title="" className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
+                    Get access to 4,958 resources
+                </a>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+
+    <div className="mt-16 md:mt-20" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <img className="object-cover object-top w-full h-auto mx-auto scale-150 2xl:max-w-screen-2xl xl:scale-100" src="https://d33wubrfki0l68.cloudfront.net/54780decfb9574945bc873b582cdc6156144a2ba/d9fa1/images/hero/4/illustration.png" alt="" />
+    </div>
+</section>
   );
 };
 
