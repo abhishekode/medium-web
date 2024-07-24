@@ -19,7 +19,7 @@ const SingleMapPost: React.FC<SingleMapPostProps> = ({ blog }) => {
     <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
       <Image
         src={blog.featuredImage}
-        className="object-cover w-full h-50 rounded-tr-[3rem] col-span-1 bg-center"
+        className="object-cover w-full h-64 rounded-tr-[3rem] col-span-1 bg-center"
         width={300}
         height={200}
         alt={blog.slug}

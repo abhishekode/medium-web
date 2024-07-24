@@ -56,7 +56,7 @@ const BlogDetails = async ({ params }: { params: { slug: string } }) => {
       <article className="px-4 py-24 mx-auto max-w-7xl">
         <div className="w-full mx-auto mb-10 text-left md:w-3/4">
           <div className="pb-6 mb-6 border-b border-gray-200">
-            <h1 className="mb-3 text-3xl font-bold text-gray-900 md:leading-tight md:text-4xl">
+            <h1 className="mb-3 text-3xl font-bold text-gray-900 md:leading-tight md:text-4xl first-letter:uppercase">
               {blog.title}
             </h1>
             <p className="text-base text-gray-500">{formattedDate} — Written by {blog.author.name}</p>
@@ -86,7 +86,7 @@ const BlogDetails = async ({ params }: { params: { slug: string } }) => {
               </svg>
             </a>
           </div>
-          <Image src={blog.featuredImage} height={500} width={1200} className="object-cover w-full h-full bg-center rounded" alt="Kutty" />
+          <Image src={blog.featuredImage} height={300} width={500} className="w-[500px] h-[300px] object-cover object-center rounded-3xl" alt="Kutty" />
         </div>
 
         <div className="w-full mx-auto prose md:w-3/4" dangerouslySetInnerHTML={{ __html: blog.content }} />
