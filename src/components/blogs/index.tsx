@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const BlogLists = () => {
@@ -8,7 +9,14 @@ const BlogLists = () => {
                 <div className="flex flex-col space-y-16">
                     {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30].map((post) => (
                         <div className="grid grid-cols-1 gap-6 md:grid-cols-4" data-aos="fade-right" key={post}>
-                            <img src="/brand/og.png" className="object-cover w-full h-40 col-span-1 bg-center" alt="Kutty" loading="lazy" />
+                            <Image
+                                src="/images/hori-crystal-img3.jpeg"
+                                className="object-cover w-full h-40 col-span-1 bg-center border shadow-sm rounded-2xl"
+                                height={350}
+                                width={200}
+                                alt="Kutty"
+                                loading="lazy"
+                            />
                             <div className="col-span-1 md:col-span-3">
                                 <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2020</p>
                                 <h2 className="mb-2 text-xl font-extrabold leading-snug text-gray-800">

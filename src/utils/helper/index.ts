@@ -63,7 +63,7 @@ export const commonMetaData = ({
   return {
     metadataBase: new URL("https://crystalpathshala.com"),
     title: title
-      ? `${title} | Crystal Pathshala`
+      ? `${title} | New`
       : "Crystal Pathshala | English Spoken Classes Noida Sector 15",
     description: description,
     authors: [
