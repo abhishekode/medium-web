@@ -1,6 +1,6 @@
 import UnderConstruction from '@/components/Common/UnderConstruction'
 import SingleMapPost from '@/components/blogs/SingleMapPost'
-import { BlogAPI, IBlog } from '@/utils/api/blogs.api'
+import { IBlog } from '@/utils/api/blogs.api'
 import { commonMetaData } from '@/utils/helper';
 import React from 'react'
 
@@ -18,7 +18,14 @@ export const generateMetadata = async () => {
 };
 
 const Blog = async () => {
-  const response = await BlogAPI.getAll()
+  const response = {
+    result: {
+      count: 0,
+      blogs: [],
+    },
+    status: false,
+  }; 
+  // await BlogAPI.getAll()
 
   if (!response.result || !response.status) {
     return <UnderConstruction title='Blog' />
