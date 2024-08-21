@@ -7,11 +7,11 @@ import BlogLists from '@/components/blogs';
 
 export const generateMetadata = async () => {
   const metaData = commonMetaData({
-    title: 'Learn Spoken English & Professional Skills in Noida, Delhi NCR',
-    description: 'Crystal Pathshala offers top-tier training in Spoken English, Public Speaking, Personality Development, and Corporate Training in Noida, Delhi NCR. Elevate your skills today!',
-    image: 'https://crystalpathshala.com/images/rahul-p-dev.png',
+    title: 'Home',
+    description: 'This is description of home page!',
+    image: 'https://website.com/images/rahul-p-dev.png',
     url: '/',
-    keywords: ['Crystal Pathshala', 'Spoken English', 'Public Speaking', 'Personality Development', 'Professional English', 'Corporate Training', 'Noida', 'Delhi NCR', 'skills training'],
+    keywords: ['blog', 'hello'],
   });
   return {
     ...metaData,
